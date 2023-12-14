@@ -14,12 +14,21 @@ INSERT INTO SystemStelaire(gouverneur, nomSystem, libre, coordX, coordY) VALUES
 ```
 ## Astre 
 ```SQL
-INSERT INTO Astre(idSystem, nomAstre, masseAstre, descriptionAstre, libre) VALUES
-(çà
-	1,
-	'Eabudria L.494 II',
-	5.9265,
-	"",
+INSERT INTO Astre(idSystem,typeAstre, nomAstre, masseAstre, descriptionAstre, libre) VALUES
+(
+	2,
+	"Planete",
+	'Nord de Wadda',
+	"7,756.10^24 kg",
+	"Ces planètes sont petites, rocheuses et ont tous les ingrédients pour que la vie se produisent sur elles...",
+	TRUE
+),
+(
+	2,
+	"Planete",
+	'Hedion Ouest',
+	"2,389.10^24 kg",
+	"Ce sont des planètes dont la température, ...",
 	TRUE
 )
 ```
@@ -33,14 +42,29 @@ INSERT INTO Etoile(idAstre, luminosite, vivante) VALUES
 	5, #Age étoile
 )
 ```
-## GestionType
+
+## Type
 ```SQL
-INSERT INTO GestionType(idAstre, idType) VALUES 
+INSERT INTO `Type`(lettreType, valeurType) VALUES
 (
-	1, #idAstre
-	2, idType
+	'A',
+	'Blanc'
+),
+(
+	'IV',
+	'Subgiant'
 )
 ```
+
+## GestionType
+```SQL
+INSERT INTO GestionType(idEtoile, idType) VALUES
+(
+	3,
+	4
+)
+```
+
 ## Planètes  
 ```SQL
 INSERT INTO Planete(idAstre, typePlanete, habitable, temperature, mouvements, atmosphere)
@@ -66,7 +90,7 @@ INSERT INTO PlaneteRessources(idPlanete, idRessource) VALUES
 	15
 )
 ```
-## Satellite #Satellite 
+## Satellite 
 ```SQL
 INSERT INTO Satellite(idPlanete, nomSatellite, typeSatellite) VALUES
 (

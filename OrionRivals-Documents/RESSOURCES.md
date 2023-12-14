@@ -18,3 +18,6 @@
 16. Hydrogène         
 17. Or                
 18. Cuivre            
+19. Pierre précieuses
+20. Cristaux chimiques 
+21. Carcasse de Vaisseaux
