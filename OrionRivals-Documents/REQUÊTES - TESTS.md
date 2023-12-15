@@ -2,7 +2,7 @@
 
 #### GET #RessourcesPlanète BY NOM #Astre
 
-```sql
+```SQL
 SELECT nomRessource FROM Ressource r
 JOIN PlaneteRessources pr ON r.idRessource = pr.idRessource
 JOIN Planete p ON pr.idPlanete = p.idPlanete
