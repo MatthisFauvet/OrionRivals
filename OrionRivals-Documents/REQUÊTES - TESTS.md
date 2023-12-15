@@ -94,3 +94,10 @@ JOIN Planete p ON s.idPlanete = p.idPlanete
 JOIN Astre a ON p.idAstre = a.idAstre;
 ```
 
+#### GET ID, NOM #Astre BY ID #SystèmeStellaire 
+```SQL
+SELECT idAstre, nomAstre FROM Astre a
+WHERE a.idSystem = 3
+```
+
+

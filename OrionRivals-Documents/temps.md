@@ -113,3 +113,7 @@ TRUE
 
 )
 ```
+
+
+
+La balkanisation. Il n'y a pas d'autorité centrale; les gouvernements rivaux sont en concurrence pour le contrôle. (Gouvernements multiples, guerre mondiale).

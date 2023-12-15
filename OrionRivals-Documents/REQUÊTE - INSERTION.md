@@ -138,6 +138,19 @@ INSERT INTO Arme(nomArme, typeArme, longueurArme, degatArme, effetArme, descript
 ```
 
 
+## Information 
+```SQL
+INSERT INTO Information(idPlanete, infoPopulation, infoTechnologie, infoGouvernement, infoAstroport) VALUES
+
+(
+	19,
+	"Des dizaines de milliers (colonies auto-entretenues ou principales installations d'approvisionnement).",
+	"Supérieur (haut âge stellaire). Capacité totale de conversion d'énergie, transport interstellaire rapide, intelligence artificiel avancée et contrôle totale de la nanotechnologie et de la biotechnique.",
+	"Dirigeant charismatique. Agence dirigées par un seul dirigeant qui jouit de la confiance écrasante des citoyens. Chef de la Révolution, messi, empereur.",
+	"Astroport de qualité de routine avec carburant non raffiné et chantier de réparation."
+);
+```
+
 ___
 
 # Guildes 
